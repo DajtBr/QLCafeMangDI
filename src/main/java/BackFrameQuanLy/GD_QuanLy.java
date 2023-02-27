@@ -231,6 +231,8 @@ public class GD_QuanLy extends javax.swing.JFrame {
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         KhoHang = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblDsNguyenLieu = new javax.swing.JTable();
@@ -247,8 +249,6 @@ public class GD_QuanLy extends javax.swing.JFrame {
         tblDanhSachCT = new javax.swing.JTable();
         txtTimKiemCongThuc = new javax.swing.JTextField();
         jLabel34 = new javax.swing.JLabel();
-        btnThemCT = new javax.swing.JButton();
-        btnXoaCT = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox<>();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
@@ -1196,7 +1196,7 @@ public class GD_QuanLy extends javax.swing.JFrame {
         jLabel47.setForeground(new java.awt.Color(255, 0, 51));
         jLabel47.setText("Trễ");
 
-        jPanel21.setBackground(new java.awt.Color(0, 204, 0));
+        jPanel21.setBackground(new java.awt.Color(255, 0, 51));
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -1307,6 +1307,16 @@ public class GD_QuanLy extends javax.swing.JFrame {
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jButton3.setFont(new java.awt.Font("UTM Avo", 0, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(114, 149, 153));
+        jButton3.setText("Danh sách chấm công");
+
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jButton4.setFont(new java.awt.Font("UTM Avo", 0, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(114, 149, 153));
+        jButton4.setText("Chấm công");
+
         javax.swing.GroupLayout BangchamcongLayout = new javax.swing.GroupLayout(Bangchamcong);
         Bangchamcong.setLayout(BangchamcongLayout);
         BangchamcongLayout.setHorizontalGroup(
@@ -1327,6 +1337,12 @@ public class GD_QuanLy extends javax.swing.JFrame {
                             .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())))
+            .addGroup(BangchamcongLayout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(53, 53, 53))
         );
         BangchamcongLayout.setVerticalGroup(
             BangchamcongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1343,7 +1359,11 @@ public class GD_QuanLy extends javax.swing.JFrame {
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(BangchamcongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         Menu.add(Bangchamcong, "card4");
@@ -1473,10 +1493,6 @@ public class GD_QuanLy extends javax.swing.JFrame {
         jLabel34.setForeground(new java.awt.Color(114, 149, 153));
         jLabel34.setText("Danh sách công thức các món");
 
-        btnThemCT.setText("Thêm mới công thức");
-
-        btnXoaCT.setText("Xóa công thức");
-
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mã công thức", "Tên công thức", "Đánh giá" }));
 
         javax.swing.GroupLayout DanhsachcongthucLayout = new javax.swing.GroupLayout(Danhsachcongthuc);
@@ -1486,7 +1502,9 @@ public class GD_QuanLy extends javax.swing.JFrame {
             .addGroup(DanhsachcongthucLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(DanhsachcongthucLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE)
+                    .addGroup(DanhsachcongthucLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1)
+                        .addContainerGap())
                     .addGroup(DanhsachcongthucLayout.createSequentialGroup()
                         .addGroup(DanhsachcongthucLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(DanhsachcongthucLayout.createSequentialGroup()
@@ -1494,13 +1512,7 @@ public class GD_QuanLy extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DanhsachcongthucLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnThemCT, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
-                .addComponent(btnXoaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
+                        .addGap(0, 298, Short.MAX_VALUE))))
         );
         DanhsachcongthucLayout.setVerticalGroup(
             DanhsachcongthucLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1512,12 +1524,8 @@ public class GD_QuanLy extends javax.swing.JFrame {
                     .addComponent(txtTimKiemCongThuc, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                     .addComponent(jComboBox2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(DanhsachcongthucLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnThemCT, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnXoaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37))
         );
 
         Menu.add(Danhsachcongthuc, "card8");
@@ -1881,12 +1889,12 @@ public class GD_QuanLy extends javax.swing.JFrame {
     private javax.swing.JLabel btnKhoHang;
     private javax.swing.JLabel btnKhuyenMai;
     private javax.swing.JButton btnNhapNL;
-    private javax.swing.JButton btnThemCT;
     private javax.swing.JLabel btnThongBao;
-    private javax.swing.JButton btnXoaCT;
     private javax.swing.JButton btnXoaNL;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
@@ -2070,6 +2078,7 @@ public class GD_QuanLy extends javax.swing.JFrame {
           Object[] row9 = new Object[]{
                "NL010" ,"BỘT MATCHA","4","TÚI"
             };
+          
             model.addRow(row9);
     }
 }
